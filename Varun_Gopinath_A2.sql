@@ -43,3 +43,22 @@ CALL balance_Varun('A-215', 500);
 CALL balance_Varun('A-215', 400);  
 
 SELECT * FROM ACCOUNT;
+
+-- PART 2
+
+SELECT * FROM CUSTOMERS;
+
+-- TASK 1
+-- Create an Updatabale view uv_Varun for accessing customer contact names
+
+CREATE VIEW uv_Varun AS
+SELECT ContactName
+FROM customers;
+
+-- TASK 2
+
+-- Create a Non updatabale view nuv_Varun
+CREATE VIEW nuv_Varun AS
+SELECT CONCAT(ContactName, ' (Contact)') AS ContactName
+FROM customers;
+
