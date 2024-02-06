@@ -1,0 +1,5 @@
+-- Varun Gopinath - 8929281
+-- Advanced Database Design - Assignment 2
+DROP DATABASE IF EXISTS GOPINATH81;
+CREATE DATABASE GOPINATH81;
+USE GOPINATH81;
